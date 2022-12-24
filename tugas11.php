@@ -33,18 +33,27 @@
             public function setLebar($lebar){
                 return $this->lebar=$lebar;
             }
-        }
-        $luaspersegi=new persegiPanjang();
-        echo "panjang :".$luaspersegi->setPanjang(20);
-        echo "<br>";
-        echo "lebar :".$luaspersegi->setLebar(10);
-        echo "<br>";
+        }?>
+        
+        <table>
+            <tr>
+                <td >Dik =</td>
+                <td><?php 
+                $luaspersegi=new persegiPanjang();
+                echo "panjang :".$luaspersegi->setPanjang(20);?></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><?php echo "lebar :".$luaspersegi->setLebar(10);?></td>
+            </tr>
+        </table>
+        
+        <?php
+        
         echo "maka luas persegi panjang =".$luaspersegi->luasP();
         echo "<br>";
         echo "maka luas keliling persegi panjang =".$luaspersegi->kelilingP();
-        echo "<br>";
-        echo "======================";
-        echo "<br>";
+        
     ?>
     <h1>Menghitung Luas Segitiga</h1>
     <?php
@@ -63,13 +72,24 @@
             public function setalas($alas){
                 return $this->alas=$alas;
             }
-        }
-
-        $luassegitiga=new segitiga();
-        echo "tinggi :".$luassegitiga->settinggi(20);
-        echo "<br>";
-        echo "alas :".$luassegitiga->setalas(10);
-        echo "<br>";
+        }?>
+        <table>
+            <tr>
+                <td >Dik =</td>
+                <td><?php 
+                $luassegitiga=new segitiga();
+                echo "tinggi :".$luassegitiga->settinggi(20);?></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><?php echo "alas :".$luassegitiga->setalas(10);?></td>
+            </tr>
+        </table>
+        
+        
+       
+        
+       <?php
         echo "maka luas segitiga =".$luassegitiga->luasSegitiga();
     ?>
 </body>
